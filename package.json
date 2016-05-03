@@ -1,0 +1,27 @@
+{
+  "name": "mongoose-example",
+  "version": "0.0.1",
+  "description": "'这仅仅只是个例子'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:noshower/movies.git"
+  },
+  "keywords": [
+    "mongoose"
+  ],
+  "author": "noshower",
+  "license": "MIT",
+  "homepage": "git@github.com:noshower/movies.git",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "express3-handlebars": "^0.5.2",
+    "moment": "^2.13.0",
+    "mongoose": "^4.4.14",
+    "underscore": "^1.8.3"
+  }
+}

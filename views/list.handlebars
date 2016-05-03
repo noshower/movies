@@ -1,0 +1,34 @@
+{{> header}}
+<div class="container">
+	<div class="row">
+		<table class="table table-hover table-bordered">
+			<thead>
+				<tr>
+					<th>电影名字</th>
+					<th>导演</th>
+					<th>国家</th>
+					<th>上映年份</th>
+					<th>录入时间</th>
+					<th>查看</th>
+					<th>更新</th>
+					<th>删除</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{#each movies}}
+				<tr class="item-id-{{_id}}">
+					<td>{{title}}</td>
+					<td>{{doctor}}</td>
+					<td>{{country}}</td>
+					<td>{{year}}</td>
+					<td>{{meta.createAt}}</td>
+					<td><a target="_blank" href="../movie/{{_id}}">查看</a></td>
+					<td><a target="_blank" href="../admin/update/{{_id}}">修改</a></td>
+					<td><button class="btn btn-danger del" type="button" data-id="{{_id}}">删除</button></td>
+				</tr>
+				{{/each}}
+			</tbody>
+		</table>
+	</div>
+</div>
+<script src="/admin.js"></script>

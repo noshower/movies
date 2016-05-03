@@ -1,0 +1,57 @@
+{{> header}}
+<div class="container">
+	<div class="row">
+		<form class="form-horizontal" method="post" action="/admin/movie/new">
+			<input type="hidden" name="movie[_id]" value="{{movie.id}}" />
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="inputTitle">电影名字</label>
+				<div class="col-sm-10">
+					<input id="inputTitle" class="form-control" type="text" name="movie[title]" value="{{movie.title}}"/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="inputDoctor">导演</label>
+				<div class="col-sm-10">
+					<input id="inputDoctor" class="form-control" type="text" name="movie[doctor]" value="{{movie.doctor}}"/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="inputCountry">国家</label>
+				<div class="col-sm-10">
+					<input id="inputCountry" class="form-control" type="text" name="movie[country]" value="{{movie.country}}"/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="inputLanguage">语言</label>
+				<div class="col-sm-10">
+					<input id="inputLanguage" class="form-control" type="text" name="movie[language]" value="{{movie.language}}"/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="inputPoster">海报地址</label>
+				<div class="col-sm-10">
+					<input id="inputPoster" class="form-control" type="text" name="movie[poster]" value="{{movie.poster}}"/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="inputFlash">片源地址</label>
+				<div class="col-sm-10">
+					<input id="inputFlash" class="form-control" type="text" name="movie[flash]" value="{{movie.flash}}"/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="inputYear">上映年份</label>
+				<div class="col-sm-10">
+					<input id="inputYear" class="form-control" type="text" name="movie[year]" value="{{movie.year}}"/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="inputSummary">电影简介</label>
+				<div class="col-sm-10">
+					<input id="inputSummary" class="form-control" type="text" name="movie[summary]" value="{{movie.summary}}"/>
+				</div>
+			</div>
+			<button class="btn btn-default" type="submit">录入</button>
+		</form>
+	</div>
+</div>

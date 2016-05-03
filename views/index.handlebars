@@ -1,0 +1,18 @@
+{{> header}}
+<div class="container">
+	<div class="row">
+		{{#each movies}}
+			<div class="col-md-2">
+				<div class="thumbnail">
+					<a href="/moive/{{_id}}">
+						<img src="{{poster}}" alt="{{title}}">
+					</a>
+					<div class="caption">
+						<h4>{{title}}</h4>
+						<p><a class="btn btn-primary" href="/movie/{{_id}}" role="button">观看预告片</a></p>
+					</div>
+				</div>
+			</div>
+		{{/each}}
+	</div>
+</div>
